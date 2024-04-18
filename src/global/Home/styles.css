@@ -1,0 +1,35 @@
+.logo {
+    margin: 50px;
+    border-radius: 50px;
+ }
+ 
+ .textBest {
+    margin-left: 60px;
+    margin-bottom: 20px;
+    font-size: 30px;
+ }
+ 
+ .main {
+    display: flex;
+ }
+ 
+ .book-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+ }
+ 
+ 
+ 
+ @media screen and (max-width: 720px) {
+    .logo {
+       display: none;
+    }
+ 
+    .Home {
+       display: flex;
+       flex-direction: column;
+    }
+ }
