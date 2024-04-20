@@ -19,17 +19,17 @@
     width: 300px;
     padding: 20px;
     margin: 20px;
+    border-radius: 20px;
  }
  
- 
- 
- @media screen and (max-width: 720px) {
-    .logo {
-       display: none;
-    }
- 
-    .Home {
-       display: flex;
-       flex-direction: column;
-    }
+ .line {
+   border: 1px solid rgb(235, 233, 233);
+   width: auto;
+   margin: 5px;
+   box-shadow: 2px 2px 4px 0 rgba(255, 0, 0, 0.2);
  }
+ 
+ img{
+   border-radius: 10px;
+ }
+ 
