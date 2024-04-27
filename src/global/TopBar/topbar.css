@@ -1,0 +1,12 @@
+.svg-icon {
+    color: white;
+    border: 2px solid rgb(87, 87, 87);
+    border-radius: 30px;
+    padding: 1px;
+    height: 30px;
+    width: 30px;
+}
+
+.svg-icon:hover{
+    background-color: rgb(101, 168, 1);
+}
