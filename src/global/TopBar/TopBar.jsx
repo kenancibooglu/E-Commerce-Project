@@ -1,39 +1,41 @@
 import React from 'react'
 import "./topbar.css";
+import { HiChevronDown } from "react-icons/hi2";
 
 
 const TopBar = () => {
     return (
-        // TopBar Left
-        <div class="flex-1 flex flex-col">
-            <nav class="px-4 flex justify-between h-16 border-b-2 bg-lime-950">
-                <ul class="flex items-center">
-                    <li class="h-10 w-22 m-8">
-                        <img
-                            class="h-full w-full mx-auto"
-                            src="https://botanica.risingbamboo.com/wp-content/themes/botanica/dist/images/logo/light.png"
-                            alt="svelte logo" /> 
-                    </li>
-                </ul>
+         // Navbar Header
+        <nav className='p-5 shadow bg-green-950 md:flex md:items-center'>
+            <div>
+                <span className='text-2xl font-[Poppins] cursor-pointer p-2'>
+                    <img className='h-10 inline' src='https://botanica.risingbamboo.com/wp-content/themes/botanica/dist/images/logo/light.png' alt='project-topbar'></img>
+                </span>
+            </div>
 
-                {/* TopBar Main */}
-                <ul className='flex items-center text-white'>
-                    <li>
-                        <h3>Home</h3>
-                    </li>
-                </ul>
-                
+            {/* NavBar İçerik Kısmı */}
+            <ul className='md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500'>
+                {/* hreflere yönlendirme yapacağız*/}
+                <li className='mx-4 my-6 md:my-0'>
+                    <a href='#' className='text-white text-m hover:text-green-400 duration-500 p-2'>Home</a>
+                </li>
+                <li className='mx-4'>
+                    <a href='#' className='text-white text-m hover:text-green-400 duration-500 p-3 md:flex items-center'>Shop<HiChevronDown/></a>
+                </li>
+                <li className='mx-4'>
+                    <a href='#' className='text-white text-m hover:text-green-400 duration-500 p-2 md:flex items-center'>Product<HiChevronDown/></a>
+                </li>
+                <li className='mx-4'>
+                    <a href='#' className='text-white text-m hover:text-green-400 duration-500 p-2 md:flex items-center'>Pages<HiChevronDown/></a>
+                </li>
+                <li className='mx-4'>
+                    <a href='#' className='text-white text-m hover:text-green-400 duration-500 p-2 md:flex items-center'>Blog<HiChevronDown/></a>
+                </li>
+                {/* Buraya Search gelecek */}
+                <button className='bg-green-800 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-green-400 rounded border-2'>Get Started</button>
+            </ul>
+        </nav>
 
-               {/* TopBar Right */}
-                <ul class="flex items-center">
-                    <li class="pr-8">
-                    <svg className='text-white border-2 rounded-xl hover:bg-green-600' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                    </li>
-                    <li class="h-10 w-10">
-                    </li>
-                </ul>
-            </nav>
-        </div>
     )
 }
 
