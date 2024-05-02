@@ -4,6 +4,6 @@
    - React
    - Redux
    - TailwindCSS
-   - Vite
+   - Vite 
    - React İcons
 
