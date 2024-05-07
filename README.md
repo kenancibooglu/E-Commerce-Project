@@ -4,7 +4,6 @@
    - React
    - Redux
    - TailwindCSS
-   - Vite 
+   - Vite
    - React İcons
-
-
+   - React Scroll
