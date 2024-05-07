@@ -22,7 +22,7 @@ const TopBar = () => {
     }
     // Responsive Navbar İçeriği
     const content = <>
-        <div className='lg:hidden block top-40 w-full absolute bg-white transition'>
+        <div className='lg:hidden block top-32 w-full rounded-lg absolute bg-gray-200 transition'>
             <ul className='text-center text-xl p-12'>
                 <Link spy={true} smooth={true} to='/' >
                     <li className='my-4 py-4 border-b border-slate-800 hover:bg-green-700  hover:rounded'>
@@ -108,7 +108,7 @@ const TopBar = () => {
                     {click && content}
                 </div>
 
-                <button className='text-xl block transition sm:hidden text-white absolute end-10 top-11' onClick={handleClick}>
+                <button className='text-xl block transition sm:hidden text-white absolute end-6 top-11' onClick={handleClick}>
                     {click ? <FaTimes /> : <CiMenuFries />}
                 </button>
             </nav>
