@@ -1,0 +1,11 @@
+.categories-left {
+    border: solid 1px whitesmoke;
+    background-color: whitesmoke;
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 2px 4px 5px 1px rgba(0, 0, 0, 0.2);
+}
