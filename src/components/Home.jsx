@@ -20,7 +20,7 @@ function Home() {
                         {/* Fresh Fruit */}
                         <div className='flex justify-start font-bold items-center mt-9'>
                             <img width="37" height="50" src="https://img.icons8.com/plasticine/100/grapes.png" alt="grapes" />
-                            <a className='text-lg' href='/fresh'>Fresh Fruit</a>
+                            <a className='text-lg ml-1' href='/fresh'>Fresh Fruit</a>
                         </div>
                         <span className='flex justify-center items-center ml-0'>More than 20 different types of fuits.</span>
                         {/* Drinks and Juices */}
@@ -47,9 +47,9 @@ function Home() {
                 <div className='bg-gray-100 border w-full p-2 m-2 rounded-xl  categories-right'>
                     <div className='right-title'>
                         <h5>Fresh Food</h5>
-                        <h1>Salmon Filled</h1>
+                        <h1>Menemen</h1>
                     </div>
-                    <p className='right-text'>Salmon fillet, with its delicate flavor and flaky texture, is a culinary delight. This versatile fish can be prepared in various ways, from simple grilling to elegant poaching. </p>
+                    <p className='right-text'>Menemen is a traditional Turkish dish made with simple yet flavorful ingredients. It typically consists of eggs, tomatoes, peppers, and spices, all cooked together in a skillet. This hearty breakfast or brunch dish is loved for its rich flavors and satisfying texture.  </p>
                 </div>
             </div>
         </>

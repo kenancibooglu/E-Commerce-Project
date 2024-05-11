@@ -22,8 +22,9 @@ const TopBar = () => {
     }
     // Responsive Navbar İçeriği
     const content = <>
-        <div className='lg:hidden block top-32 w-full rounded-lg absolute bg-gray-200 transition'>
+        <div className='lg:hidden block top-32 w-11/12 rounded-lg absolute bg-gray-200 transition'>
             <ul className='text-center text-xl p-12'>
+                <img className='h-10 inline' src='https://botanica.risingbamboo.com/wp-content/themes/botanica/dist/images/logo/light.png' alt='project-topbar'></img>
                 <Link spy={true} smooth={true} to='/' >
                     <li className='my-4 py-4 border-b border-slate-800 hover:bg-green-700  hover:rounded'>
                         <a href='/'>Home</a>
@@ -67,7 +68,7 @@ const TopBar = () => {
                 <ul className='md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500'>
                     <Link to='/' >
                         <li className='mx-4 my-6 md:my-0 text-white text-m hover:text-green-400 duration-500 p-2'>
-                            Home
+                            <a href='/'>Home</a>
                         </li>
                     </Link>
                     <li className='mx-4'>
@@ -136,7 +137,6 @@ const TopBar = () => {
                     </li>
                 </ul>
             </nav>
-
         </>
 
     )
