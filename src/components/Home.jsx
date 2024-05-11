@@ -14,31 +14,31 @@ function Home() {
                         {/* Organic Vegetables */}
                         <div className='flex justify-start font-bold items-center'>
                             <img className='transition' width="35" height="50" src="https://img.icons8.com/plasticine/100/broccoli.png" alt="broccoli" />
-                            <a href='/' className='text-lg'>Organic Vegetables</a>
+                            <a href='/organic' className='text-lg'>Organic Vegetables</a>
                         </div>
                         <span className='flex justify-center items-center ml-8'>More than 20 different types of vegetables.</span>
                         {/* Fresh Fruit */}
                         <div className='flex justify-start font-bold items-center mt-9'>
                             <img width="37" height="50" src="https://img.icons8.com/plasticine/100/grapes.png" alt="grapes" />
-                            <a className='text-lg' href='/'>Fresh Fruit</a>
+                            <a className='text-lg' href='/fresh'>Fresh Fruit</a>
                         </div>
                         <span className='flex justify-center items-center ml-0'>More than 20 different types of fuits.</span>
                         {/* Drinks and Juices */}
                         <div className='flex justify-start font-bold items-center mt-9'>
                             <img width="45" height="50" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-juices-dieting-flaticons-flat-flat-icons.png" alt="juices-drink" />
-                            <a className='text-lg' href='/'>Drinks and Juices</a>
+                            <a className='text-lg' href='/drinks'>Drinks and Juices</a>
                         </div>
                         <span className='flex justify-center items-center ml-5'>Fruit juices and carbonated soft drinks</span>
                         {/* Frozen Fish */}
                         <div className='flex justify-start font-bold items-center mt-9'>
                             <img width="45" height="40" src="https://img.icons8.com/fluency/48/perch.png" alt="frozen-fish" />
-                            <a className='text-lg ml-1' href='/'>Frozen Fish</a>
+                            <a className='text-lg ml-1' href='/frozen'>Frozen Fish</a>
                         </div>
                         <span className='flex justify-center items-center ml-6'>Get the freshest salmon and ocean trout</span>
                         {/* Bee Product */}
                         <div className='flex justify-start font-bold items-center mt-9'>
                             <img className='ml-2' width="40" height="64" src="https://img.icons8.com/external-flat-icons-pause-08/64/external-bee-farm-and-garden-flat-icons-pause-08.png" alt="bee-product" />
-                            <a className='text-lg ml-2' href='/'>Bee Product</a>
+                            <a className='text-lg ml-2' href='/bee'>Bee Product</a>
                         </div>
                         <span className='flex justify-center items-center ml-0'>Get the bee salmon and ocean trout</span>
                     </div>
