@@ -8,4 +8,37 @@
     margin: 10px;
     text-align: center;
     box-shadow: 2px 4px 5px 1px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+.categories-right {
+    background-image: url(./img/salmon-flilled.jpg);
+    background-size: cover;
+    box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.2);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden;
+}
+.right-title{
+    position: absolute;
+    top: 350px;
+    left: 500px;
+}
+
+.right-title > h1 {
+    font-size: 40px;
+}
+
+.right-text{
+    font-size: 14px;
+    position: absolute;
+    top: 450px;
+    left: 500px
+}
+
+@media screen and (max-width: 648px) {
+    .categories-right {
+        display: none;
+    }
 }
