@@ -1,0 +1,47 @@
+.vegetable-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://img.freepik.com/free-photo/cute-copy-space-background-lemons_23-2148244533.jpg?t=st=1715508118~exp=1715511718~hmac=5c2b2a7b3ab8221c8ae2f296a8716a9373f57cc13ddccc2cc4e2ecdd36522c1e&w=1380");
+    height: 40vh;
+    background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.vegetable-icerik {
+    display: flex;
+    flex-direction: row;
+}
+
+.vegetable-cart {
+    border: 2px rgb(218, 217, 217) solid;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    margin: 30px;
+    border-radius: 50px;
+   
+    padding: 25px;
+}
+.vegetable-cart:hover {
+    box-shadow: 5px 5px rgba(184, 255, 215, 0.2);
+}
+
+.item > h2 {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.item > p {
+    color: green;
+    font-weight: bold;
+    font-size: 15px;
+}
+.item > button {
+    background-color: green;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+

@@ -4,7 +4,7 @@ import { HiChevronDown } from "react-icons/hi2";
 import { LuShoppingBasket } from "react-icons/lu";
 import { LuUser2 } from "react-icons/lu";
 import { FaHeart } from "react-icons/fa";
-import { Link } from 'react-scroll';
+import {Link} from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -25,27 +25,27 @@ const TopBar = () => {
         <div className='lg:hidden block top-32 w-11/12 rounded-lg absolute bg-gray-200 transition'>
             <ul className='text-center text-xl p-12'>
                 <img className='h-10 inline' src='https://botanica.risingbamboo.com/wp-content/themes/botanica/dist/images/logo/light.png' alt='project-topbar'></img>
-                <Link spy={true} smooth={true} to='/' >
+                <Link  to='/' >
                     <li className='my-4 py-4 border-b border-slate-800 hover:bg-green-700  hover:rounded'>
                         <a href='/'>Home</a>
                     </li>
                 </Link>
-                <Link spy={true} smooth={true} to='shop' >
+                <Link  to='shop' >
                     <li className='my-4 py-4 border-b border-slate-800 hover:bg-green-700  hover:rounded'>
                         <a href='/shop'>Shop</a>
                     </li>
                 </Link>
-                <Link spy={true} smooth={true} to='product' >
+                <Link  to='product' >
                     <li className='my-4 py-4 border-b border-slate-800 hover:bg-green-700  hover:rounded'>
                         <a href='/product'> Product</a>
                     </li>
                 </Link>
-                <Link spy={true} smooth={true} to='pages' >
+                <Link  to='pages' >
                     <li className='my-4 py-4 border-b border-slate-800 hover:bg-green-700  hover:rounded'>
                         <a href='/pages'>Pages</a>
                     </li>
                 </Link>
-                <Link spy={true} smooth={true} to='blog'>
+                <Link to='blog'>
                     <li className='my-4 py-4 border-b border-slate-800 hover:bg-green-700  hover:rounded'>
                         <a href='/blog'>Blogs</a>
                     </li>
@@ -66,22 +66,20 @@ const TopBar = () => {
                 </div>
                 {/* NavBar İçerik Kısmı Left */}
                 <ul className='md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500'>
-                    <Link to='/' >
                         <li className='mx-4 my-6 md:my-0 text-white text-m hover:text-green-400 duration-500 p-2'>
-                            <a href='/'>Home</a>
+                        <Link to='/'>Home</Link>
                         </li>
-                    </Link>
                     <li className='mx-4'>
-                        <a href='#' className='text-white text-m hover:text-green-400 duration-500 p-3 md:flex items-center'>Shop<HiChevronDown /></a>
+                        <Link to="/shop"  className='text-white text-m hover:text-green-400 duration-500 p-2 md:flex items-center'>Shop<HiChevronDown /></Link>
                     </li>
                     <li className='mx-4'>
-                        <a href='#' className='text-white text-m hover:text-green-400 duration-500 p-2 md:flex items-center'>Product<HiChevronDown /></a>
+                        <Link to="/product"  className='text-white text-m hover:text-green-400 duration-500 p-2 md:flex items-center'>Product<HiChevronDown /></Link>
                     </li>
                     <li className='mx-4'>
-                        <a href='#' className='text-white text-m hover:text-green-400 duration-500 p-2 md:flex items-center'>Pages<HiChevronDown /></a>
+                        <Link to="/pages"  className='text-white text-m hover:text-green-400 duration-500 p-2 md:flex items-center'>Pages<HiChevronDown /></Link>
                     </li>
                     <li className='mx-4'>
-                        <a href='#' className='text-white text-m hover:text-green-400 duration-500 p-2 md:flex items-center'>Blog<HiChevronDown /></a>
+                        <Link to="/blog" className='text-white text-m hover:text-green-400 duration-500 p-2 md:flex items-center'>Blog<HiChevronDown /></Link>
                     </li>
 
                     {/* Search */}
