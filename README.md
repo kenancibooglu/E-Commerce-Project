@@ -6,7 +6,7 @@
    - TailwindCSS
    - Vite
    - React İcons
-   - React Scroll
+   - React Scroll 
    
    # Project İmages (continues)
 
