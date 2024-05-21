@@ -8,7 +8,7 @@
    - React İcons
    - React Scroll 
    
-   # Project İmages (continues)
+   # Project İmages (continues) 
 
    <img src="project-images.png" alt="project-images">
    
