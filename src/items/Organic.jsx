@@ -17,25 +17,15 @@ function Organic() {
         <div className='vegetable-cart'>
           <button>< FaRegHeart className='text-2xl ml-56 text-green-800' /></button>
           {itemsData.map(item => (
-            <div key={item.id} className='item'>
+            <div key={item.id1} className='item'>
               <img src={item.img1} alt="cart-image-1" />
-              <h2>{item.name}</h2>
-              <p>${item.price}</p>
+              <h2>{item.name1}</h2>
+              <p>${item.price1}</p>
               <button>Add to Cart</button>
             </div>
           ))}
         </div>
-        <div className='vegetable-cart'>
-          <button>< FaRegHeart className='text-2xl ml-56 text-green-800' /></button>
-          {itemsData.map(item => (
-            <div key={item.id} className='item'>
-              <img src={item.img1} alt="cart-image-1" />
-              <h2>{item.name}</h2>
-              <p>${item.price}</p>
-              <button>Add to Cart</button>
-            </div>
-          ))}
-        </div>
+       
       </div>
     </>
   )
