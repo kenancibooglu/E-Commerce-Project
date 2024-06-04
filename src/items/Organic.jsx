@@ -18,7 +18,7 @@ function Organic() {
           <button>< FaRegHeart className='text-2xl ml-56 text-green-800' /></button>
           {itemsData.map(item => (
             <div key={item.id1} className='item'>
-              <img src={item.img1} alt="cart-image-1" />
+              <img src={item.img1} alt="cart-image-1" className='img-item1'/>
               <h2>{item.name1}</h2>
               <p>${item.price1}</p>
               <button>Add to Cart</button>
