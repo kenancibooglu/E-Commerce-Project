@@ -30,6 +30,10 @@
     font-size: 40px;
 }
 
+.right-title > h5 {
+    font-size: 25px;
+}
+
 .right-text{
     font-size: 14px;
     position: absolute;
@@ -39,8 +43,46 @@
     color: whitesmoke;
 }
 
+.line-svg {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+    
+}
+
+
+.vegetable:hover{
+    color: green;
+    font-size: large;
+}
+
+.fruits:hover{
+    color: green;
+    font-size: large;
+}
+
+.drink:hover{
+    color: green;
+    font-size: large;
+}
+
+.bee:hover{
+    color: green;
+    font-size: large;
+}
+
 @media screen and (max-width: 648px) {
     .categories-right {
         display: none;
     }
+    .farm-fresh {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .farm-fresh ul {
+        flex-direction: column;
+    }
+
 }

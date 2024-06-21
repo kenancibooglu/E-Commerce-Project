@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { TbArrowWaveRightUp } from "react-icons/tb";
+import { TbLineDashed } from "react-icons/tb";
 import './style.css';
+import VegetableItems from './FarmFreshItems/vegetable/VegetableItems';
+import FruitsItems from './FarmFreshItems/fruits/FruitsItems';
+
+
 
 function Home() {
+    const [showComponents, setShowComponents] = useState(false);
+
+    const handleClickFruits = () => {
+        setShowComponents(!showComponents);
+    }
+
     return (
         <>
             <div className='flex justify-between m-4'>
@@ -51,6 +62,31 @@ function Home() {
                     </div>
                     <p className='right-text'>Menemen is a traditional Turkish dish made with simple yet flavorful ingredients. It typically consists of eggs, tomatoes, peppers, and spices, all cooked together in a skillet. This hearty breakfast or brunch dish is loved for its rich flavors and satisfying texture.  </p>
                 </div>
+            </div>
+            <div className='farm-fresh'>
+                {/* Farm Fresh Products */}
+                <div className='flex justify-center items-center m-10'>
+                    <div>
+                        <h2 className='text-3xl'>Farm Fresh Products</h2>
+                        <span className='flex justify-center text-2xl text-green-800'><TbLineDashed /> <TbLineDashed />  <TbLineDashed /> <TbLineDashed /> </span>
+                        <div className='flex justify-center'>
+                            <a className='vegetable m-7 font-bold'>Vegetable</a>
+                            <a className='fruits m-7 font-bold' onClick={handleClickFruits}>Fruits</a>
+                            {showComponents && (
+                                <div>
+                                    <FruitsItems />
+                                </div>
+                            )}
+                            <a className='drink m-7 font-bold' href='#'>Drink</a>
+                            <a className='bee m-7 font-bold' href='#'>Bee</a>
+                        </div>
+                    </div>
+                </div>
+                <VegetableItems />
+
+
+
+
             </div>
         </>
     )

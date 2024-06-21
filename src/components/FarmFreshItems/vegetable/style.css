@@ -1,0 +1,8 @@
+.farm-fresh-items-li {
+    width: 300px;
+    margin: 50px;
+    border: 1px whitesmoke solid;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.2);
+}
