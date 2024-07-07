@@ -65,20 +65,20 @@ function Home() {
             </div>
             <div className='farm-fresh'>
                 {/* Farm Fresh Products */}
-                <div className='flex justify-center items-center m-10'>
+                <div className='flex justify-center items-center m-1'>
                     <div>
-                        <h2 className='text-3xl'>Farm Fresh Products</h2>
-                        <span className='flex justify-center text-2xl text-green-800'><TbLineDashed /> <TbLineDashed />  <TbLineDashed /> <TbLineDashed /> </span>
+                        <h2 className='text-3xl underline'>Farm Fresh Products</h2>
+                        <span className='flex justify-center text-2xl text-green-800'></span>
                         <div className='flex justify-center'>
-                            <a className='vegetable m-7 font-bold'>Vegetable</a>
-                            <a className='fruits m-7 font-bold' onClick={handleClickFruits}>Fruits</a>
+                            <a className='vegetable m-7 font-bold'>Vegetable <TbLineDashed /> </a>
+                            <a className='fruits m-7 font-bold' onClick={handleClickFruits}>Fruits<TbLineDashed /> </a>
                             {showComponents && (
                                 <div>
                                     <FruitsItems />
                                 </div>
                             )}
-                            <a className='drink m-7 font-bold' href='#'>Drink</a>
-                            <a className='bee m-7 font-bold' href='#'>Bee</a>
+                            <a className='drink m-7 font-bold' href='#'>Drink <TbLineDashed /> </a>
+                            <a className='bee m-7 font-bold' href='#'>Bee <TbLineDashed /> </a>
                         </div>
                     </div>
                 </div>
